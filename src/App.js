@@ -18,6 +18,7 @@ const App = () => {
     const [faqRef, faqInView, faqEntry] = useInView();
     const [timeRef, timeInView, timeEntry] = useInView();
     const [scheduleRef, scheduleInView, scheduleEntry] = useInView();
+    const aboutRef2 = useRef()
     // const aboutRef = useRef()
     // const categoriesRef = useRef()
     // const faqRef = useRef()
@@ -50,10 +51,10 @@ const App = () => {
 
     return (
         <div className="bg-white">
-            <Navbar glass={glass} time={timeEntry} about={aboutEntry} categories={categoriesEntry} schedule={scheduleEntry} faq={faqEntry} />
+            <Navbar glass={glass} time={timeEntry} about={aboutRef2} categories={categoriesEntry} schedule={scheduleEntry} faq={faqEntry} />
             <Hero daref={timeRef} />
-            <About daref={aboutRef} />
-            <Categories daref={categoriesRef} />
+            <About daref={aboutRef} refInView={aboutInView} ref2={aboutRef2}/>
+            <Categories daref={categoriesRef} refInView={categoriesInView}/>
             <Schedule daref={scheduleRef} refInView={scheduleInView}/>
             <FAQ daref={faqRef} />
             <Footer />

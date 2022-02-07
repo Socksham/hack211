@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = ({ glass, time, about, categories, schedule, faq }) => {
     return (
-        <div className={`fixed w-full  ${glass ? "transition duration-700 ease-in-out bg-red-400/20 backdrop-blur-sm" : "transition duration-400 ease-in-out"}`}>
+        <div className={`fixed w-full  ${glass ? "transition duration-700 ease-in-out bg-red-400/10 backdrop-blur-sm" : "transition duration-400 ease-in-out"}`}>
             <div className={`${glass ? "border-b-2 border-orange-500 " : ""}`}>
                 <div className='relative'>
                     {/* <div className='absolute inset-0 bg-gradient-to-r from-rose-600 to-blue-700 blur-lg'>
@@ -14,10 +14,10 @@ const Navbar = ({ glass, time, about, categories, schedule, faq }) => {
                     <div className='relative py-4 px-32 rounded-lg'>
                         <div className='flex justify-between text-white items-center'>
                             <div>
-                                <p className='text-lg font-semibold'>march 11-30</p>
+                                <p className='text-lg font-semibold'>march 11-13</p>
                             </div>
                             <div className='flex space-x-4 items-center'>
-                                <div onClick={() => {about.target.scrollIntoView({ behavior: 'smooth' })}}>
+                                <div onClick={() => {about.current.scrollIntoView({ behavior: 'smooth' })}}>
                                     <p className='border-dashed border-2 border-white rounded-lg  px-2 text-lg font-semibold cursor-pointer'>about</p>
                                 </div>
                                 <div onClick={() => {categories.target.scrollIntoView({ behavior: 'smooth' })}}>
