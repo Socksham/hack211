@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = ({ glass }) => {
+const Navbar = ({ glass, time, about, categories, schedule, faq }) => {
     return (
         <div className={`fixed w-full  ${glass ? "transition duration-700 ease-in-out bg-red-400/20 backdrop-blur-sm" : "transition duration-400 ease-in-out"}`}>
             <div className={`${glass ? "border-b-2 border-orange-500 " : ""}`}>
@@ -14,20 +14,23 @@ const Navbar = ({ glass }) => {
                     <div className='relative py-4 px-32 rounded-lg'>
                         <div className='flex justify-between text-white items-center'>
                             <div>
-                                <p className='text-lg font-semibold cursor-pointer'>march 11-30</p>
+                                <p className='text-lg font-semibold'>march 11-30</p>
                             </div>
-                            <div className='flex space-x-8 items-center'>
-                                <div className=''>
-                                    <p className='text-lg font-semibold cursor-pointer'>about</p>
+                            <div className='flex space-x-4 items-center'>
+                                <div onClick={() => {about.target.scrollIntoView({ behavior: 'smooth' })}}>
+                                    <p className='border-dashed border-2 border-white rounded-lg  px-2 text-lg font-semibold cursor-pointer'>about</p>
                                 </div>
-                                <div>
-                                    <p className='text-lg font-semibold cursor-pointer'>categories</p>
+                                <div onClick={() => {categories.target.scrollIntoView({ behavior: 'smooth' })}}>
+                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>categories</p>
                                 </div>
-                                <div>
-                                    <p className='text-lg font-semibold cursor-pointer'>faq</p>
+                                <div onClick={() => {schedule.target.scrollIntoView({ behavior: 'smooth' })}}>
+                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>schedule</p>
                                 </div>
-                                <div>
-                                    <p className='text-lg font-semibold cursor-pointer'>interested?</p>
+                                <div onClick={() => {faq.target.scrollIntoView({ behavior: 'smooth' })}}>
+                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>faq</p>
+                                </div>
+                                <div onClick={() => {time.target.scrollIntoView({ behavior: 'smooth' })}}>
+                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>interested?</p>
                                 </div>
                             </div>
                         </div>

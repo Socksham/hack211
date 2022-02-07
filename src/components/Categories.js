@@ -1,19 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import CategoryModal from './CategoryModal';
 
-const Categories = () => {
+const Categories = ({daref}) => {
+
+    const [showModal, setShowModal] = useState(false);
+    const [modalTitle, setModalTitle] = useState("")
+    const [modalText, setModalText] = useState("");
+
+    function entertainment(){
+        setModalTitle("entertainment")
+        setModalText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+        setShowModal(true);
+    }
+
+    function utilities(){
+        setModalTitle("utilities")
+        setModalText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+        setShowModal(true);
+    }
+
     return (
-        <div className='grid place-items-center bg-gradient-to-tl from-amber-500 to-red-500 min-h-screen h-full'>
+        <div className='grid place-items-center bg-gradient-to-tl from-amber-500 to-red-500 min-h-screen h-full' ref={daref}>
+            <CategoryModal showModal={showModal} setShowModal={setShowModal} title={modalTitle} text={modalText}/>
             <div className=''>
                 <p className='text-center text-white text-6xl font-extrabold pb-4 mb-10'>categories</p>
                 <div className='grid grid-cols-2 gap-8'>
-                    <div className='bg-white rounded-xl grid place-items-center p-8'>
+                    <div className='bg-white rounded-xl grid place-items-center p-8 cursor-pointer shadow-md' onClick={entertainment}>
                         <div>
-                            <p className='text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500'>Entertainment</p>
+                            <p className='text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500'>entertainment</p>
                         </div>
                     </div>
-                    <div className='bg-white rounded-xl grid place-items-center p-8'>
+                    <div className='bg-white rounded-xl grid place-items-center p-8 cursor-pointer shadow-md' onClick={utilities}>
                         <div>
-                            <p className='text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500'>Utility</p>
+                            <p className='text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500'>utility</p>
                         </div>
                     </div>
                 </div>

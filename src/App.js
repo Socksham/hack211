@@ -1,19 +1,33 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 import About from './components/About';
 import Categories from './components/Categories';
 import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import Schedule from './components/Schedule';
 
 const App = () => {
 
     const [y, setY] = useState(window.scrollY);
     const [glass, setGlass] = useState(false)
 
+    const [aboutRef, aboutInView, aboutEntry] = useInView();
+    const [categoriesRef, categoriesInView, categoriesEntry] = useInView();
+    const [faqRef, faqInView, faqEntry] = useInView();
+    const [timeRef, timeInView, timeEntry] = useInView();
+    const [scheduleRef, scheduleInView, scheduleEntry] = useInView();
+    // const aboutRef = useRef()
+    // const categoriesRef = useRef()
+    // const faqRef = useRef()
+    // const timeRef = useRef()
+    // const scheduleRef = useRef()
+
     const handleNavigation = useCallback(
         e => {
             const window = e.currentTarget;
-            if(window.scrollY === 0){
+            if (window.scrollY === 0) {
                 setGlass(false)
             }
             // if (y > window.scrollY) {
@@ -36,13 +50,13 @@ const App = () => {
 
     return (
         <div className="bg-white">
-            <div className="bg-gradient-to-tl from-amber-500 to-red-500 min-h-screen h-full">
-                <Navbar glass={glass}/>
-                <Hero />
-            </div>
-            <About />
-            <Categories />
-            <FAQ />
+            <Navbar glass={glass} time={timeEntry} about={aboutEntry} categories={categoriesEntry} schedule={scheduleEntry} faq={faqEntry} />
+            <Hero daref={timeRef} />
+            <About daref={aboutRef} />
+            <Categories daref={categoriesRef} />
+            <Schedule daref={scheduleRef} refInView={scheduleInView}/>
+            <FAQ daref={faqRef} />
+            <Footer />
         </div>
     );
 };

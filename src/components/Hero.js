@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Hero = () => {
+const Hero = ({ daref }) => {
 
     const [days, setDays] = useState("00")
     const [hours, setHours] = useState("00")
@@ -54,7 +54,7 @@ const Hero = () => {
     }, [])
 
     return (
-        <div className='grid place-items-center h-screen'>
+        <div className='grid place-items-center h-full min-h-screen bg-gradient-to-tl from-amber-500 to-red-500' ref={daref}>
             <div className=''>
                 <p className='text-center text-white text-6xl font-extrabold pb-4'>hack211</p>
                 <div className='text-white text-3xl'>
@@ -70,11 +70,16 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center w-full'>
-                    <div className='flex space-x-1 text-white text-lg pt-2'>
-                        <p>interesed? fill out the form</p>
-                        <p className='underline cursor-pointer text-red-500'>here</p>
+                <div className='flex justify-center mt-4 rounded-xl'>
+                    <div className='bg-white px-2 py-2 rounded-lg'>
+                        <div className='flex space-x-2 text-white text-lg items-center'>
+                            <p className='text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500'>interested? fill out the form</p>
+                            <div className='bg-gradient-to-tl from-amber-500 to-red-500 py-1 px-2 rounded-lg cursor-pointer'>
+                                <p className='text-white'>here</p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
