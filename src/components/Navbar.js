@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = ({ glass, time, about, categories, schedule, faq }) => {
     return (
-        <div className={`fixed w-full  ${glass ? "transition duration-700 ease-in-out bg-red-400/10 backdrop-blur-sm" : "transition duration-400 ease-in-out"}`}>
+        <div className={`fixed w-full  ${glass ? "transition duration-700 ease-in-out bg-red-400/40 backdrop-blur-sm" : "transition duration-400 ease-in-out"}`}>
             <div className={`${glass ? "border-b-2 border-orange-500 " : ""}`}>
                 <div className='relative'>
                     {/* <div className='absolute inset-0 bg-gradient-to-r from-rose-600 to-blue-700 blur-lg'>
@@ -29,8 +29,8 @@ const Navbar = ({ glass, time, about, categories, schedule, faq }) => {
                                 <div onClick={() => {faq.target.scrollIntoView({ behavior: 'smooth' })}}>
                                     <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>faq</p>
                                 </div>
-                                <div onClick={() => {time.target.scrollIntoView({ behavior: 'smooth' })}}>
-                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>interested?</p>
+                                <div className='bg-white rounded-lg px-2 py-1' onClick={() => {time.target.scrollIntoView({ behavior: 'smooth' })}}>
+                                    <p className='text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500  rounded-lg text-lg font-semibold cursor-pointer'>interested?</p>
                                 </div>
                             </div>
                         </div>
