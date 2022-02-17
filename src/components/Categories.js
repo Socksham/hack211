@@ -11,14 +11,14 @@ const Categories = ({ daref, refInView }) => {
     const animated = useRef(false)
 
     function entertainment() {
-        setModalTitle("entertainment")
-        setModalText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+        setModalTitle("game")
+        setModalText("Participants who wish to compete in this category can create something that provides joy and entertainment to the user. Any game-based application is accepted in this category.")
         setShowModal(true);
     }
 
     function utilities() {
-        setModalTitle("utilities")
-        setModalText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+        setModalTitle("utility")
+        setModalText("Participants who wish to compete in this category can create something that can help people’s lives through utility or by enhancing productivity. Traditional applications regarding social media, task management, or productivity enhancement are accepted in this category, as well as any other applications that help the user do something.")
         setShowModal(true);
     }
 
@@ -48,7 +48,7 @@ const Categories = ({ daref, refInView }) => {
                     >
                         <div className='bg-white rounded-xl grid place-items-center p-8 cursor-pointer shadow-md' onClick={entertainment}>
                             <div>
-                                <p className='text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500'>entertainment</p>
+                                <p className='text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500'>game</p>
                             </div>
                         </div>
                     </Transition>

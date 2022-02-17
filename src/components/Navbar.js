@@ -14,7 +14,7 @@ const Navbar = ({ glass, time, about, categories, schedule, faq }) => {
                     <div className='relative py-4 px-32 rounded-lg'>
                         <div className='flex justify-between text-white items-center'>
                             <div>
-                                <p className='text-lg font-semibold'>march 11-13</p>
+                                <p className='text-lg font-semibold'>March 11-13</p>
                             </div>
                             <div className='flex space-x-4 items-center'>
                                 <div onClick={() => {about.current.scrollIntoView({ behavior: 'smooth' })}}>

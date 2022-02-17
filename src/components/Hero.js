@@ -56,7 +56,7 @@ const Hero = ({ daref }) => {
     return (
         <div className='grid place-items-center h-full min-h-screen bg-gradient-to-tl from-amber-500 to-red-500' ref={daref}>
             <div className=''>
-                <p className='text-center text-white text-6xl font-extrabold pb-4'>cougarhacks</p>
+                <p className='text-center text-white text-6xl font-extrabold pb-4'>CougarHacks</p>
                 <div className='text-white text-3xl'>
                     <div className='flex justify-center'>
                         <div className='flex space-x-6 tabular-nums'>
