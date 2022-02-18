@@ -6,7 +6,7 @@ import { Transition } from '@headlessui/react'
 const Schedule = ({ daref, refInView }) => {
 
     const animated = useRef(false)
-    const [scheduleDays, setScheduleDays] = useState(["march 11", "march 12", "march 13"])
+    const [scheduleDays, setScheduleDays] = useState(["march 11", "march 12", "march 13", "march 14"])
     const [num, setNum] = useState(0)
     const [scheduleTimes, setScheduleTimes] = useState([
         {
@@ -27,7 +27,13 @@ const Schedule = ({ daref, refInView }) => {
         },
         {
             times: [
-                { time: "8:00am", event: "project submissions due", location: "virtually: devpost" }
+                { time: "8:00am", event: "project submissions due", location: "virtually: devpost" },
+                { time: "8:00am", event: "project judging begins", location: "virtually: devpost" },
+            ]
+        },
+        {
+            times: [
+                { time: "TBD", event: "award ceremony begins", location: " virtually and in-person: conant high school media center" },
             ]
         }
     ])
@@ -124,6 +130,20 @@ const Schedule = ({ daref, refInView }) => {
                             <div className='grid grid-cols-1 gap-2'>
                                 {
                                     scheduleTimes[2].times.map((time, i) => {
+                                        return (
+                                            <div key={i}>
+                                                <ScheduleTime time={time} />
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
+                        }
+                        {
+                            num === 3 &&
+                            <div className='grid grid-cols-1 gap-2'>
+                                {
+                                    scheduleTimes[3].times.map((time, i) => {
                                         return (
                                             <div key={i}>
                                                 <ScheduleTime time={time} />
