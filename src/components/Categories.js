@@ -18,7 +18,7 @@ const Categories = ({ daref, refInView }) => {
 
     function utilities() {
         setModalTitle("utility")
-        setModalText("Participants who wish to compete in this category can create something that can help people’s lives through utility or by enhancing productivity. Traditional applications regarding social media, task management, or productivity enhancement are accepted in this category, as well as any other applications that help the user do something.")
+        setModalText("Participants who wish to compete in this category can create something that can help people’s lives through utility or by enhancing productivity. Traditional applications regarding social media, task management, or productivity enhancement are accepted in this category, as well as any other applications that help the user in some way.")
         setShowModal(true);
     }
 
