@@ -5,38 +5,59 @@ import FAQCard from './FAQCard';
 const FAQ = ({ daref }) => {
     const [items, setItems] = useState([
         {
-            title: "generalgeneralgeneralgeneral",
+            title: "general",
             questions: [
                 {
-                    question: "what is cougarhacks?",
-                    answer: "a hackathon"
+                    question: "What is a hackathon?",
+                    answer: "A hackathon is an event where coders of all ability levels come together and build cool projects with software and/or hardware."
+                },
+                {
+                    question: "What is a workshop?",
+                    answer: "Workshops are sessions within hackathons where you can go to learn more about specific technologies or concepts. You can take what you learn from a workshop and implement it into your project or just attend for fun!"
+                },
+                {
+                    question: "What’s the cost?",
+                    answer: "Completely free! We want to make Hack211 accessible and open to all."
                 }
             ]
         },
         {
-            title: "general",
+            title: "timing",
             questions: [
                 {
-                    question: "what is cougarhacks?",
-                    answer: "a hackathon"
+                    question: "How long is CougarHacks?",
+                    answer: "The official hackathon goes from 8pm on March 11th and submissions are due by 8am March 13th. The opening ceremony and awards will take place before and after the main hackathon competition, while the workshops will be during the hackathon on March 12th. For more specifics, refer to the schedule above."
                 }
             ]
         },
         {
-            title: "general",
+            title: "logistics",
             questions: [
                 {
-                    question: "what is cougarhacks?",
-                    answer: "a hackathon"
+                    question: "How do categories and prizes work?",
+                    answer: "Categories are different judging sections for the hackathon. By submitting your project to a category, it will be compared to other similar projects. All tracks have their own prizes and there will also be overall prizes for the best projects in the entire hackathon. After judging is complete, prizes will be awarded to the winners in the awards ceremony."
+                },
+                {
+                    question: "How do teams work?",
+                    answer: "You can create teams of up to 4 people to work with during the hackathon. If you’re coming alone, great! You can join another team or fly solo if you want!"
                 }
             ]
         },
         {
-            title: "general",
+            title: "questions",
             questions: [
                 {
-                    question: "what is cougarhacks?",
-                    answer: "a hackathon"
+                    question: "But I don’t know how to code?",
+                    answer: "Great! CougarHacks is made to be inclusive. We have different tracks that will allow you to build projects suited for your skill level. Also, be sure to attend workshops to learn as much as you can!"
+                },
+                {
+                    question: "I'm interested! Where do I sign up!?",
+                    answer: "Official sign ups are not avilable yet, but you should fill out the interest form linked at the top of the page"
+                },
+                
+                {
+                    question: "I have more questions!",
+                    answer: "Reach out to us at anandani4136@students.d211.org or makadia7236@students.d211.org and we are happy to help!"
                 }
             ]
         },
