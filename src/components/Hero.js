@@ -54,9 +54,13 @@ const Hero = ({ daref }) => {
     }, [])
 
     return (
-        <div className='grid place-items-center h-full min-h-screen bg-gradient-to-tl from-amber-500 to-red-500' ref={daref}>
+        <div className='grid place-items-center h-full min-h-screen bg-gradient-to-tl from-red-700 to-blue-700' ref={daref}>
             <div className=''>
-                <p className='text-center text-white text-6xl font-extrabold pb-4'>CougarHacks</p>
+                <img src='CougarHacks.jpeg' width="500" height="435" alt='CougarHacks'></img>
+                <br></br>
+                <br></br>
+                {/* <p className='text-center text-white text-6xl font-extrabold pb-4'>CougarHacks</p> */}
+                
                 <div className='text-white text-3xl'>
                     <div className='flex justify-center'>
                         <div className='flex space-x-6 tabular-nums'>
@@ -73,8 +77,8 @@ const Hero = ({ daref }) => {
                 <div className='flex justify-center mt-4 rounded-xl'>
                     <div className='bg-white px-2 py-2 rounded-lg'>
                         <div className='flex space-x-2 text-white text-lg items-center'>
-                            <p className='text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500'>interested? fill out the form</p>
-                            <div className='bg-gradient-to-tl from-amber-500 to-red-500 py-1 px-2 rounded-lg cursor-pointer' onClick={() => {window.open("https://docs.google.com/forms/d/e/1FAIpQLSdQT0gu3zkkHc75B6uMoGrbWCmGE3BPhjhiGEzX6BtLVgOiJg/viewform?usp=sf_link")}}>
+                            <p className='text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>interested? fill out the form</p>
+                            <div className='bg-gradient-to-tl from-red-700 to-blue-700 py-1 px-2 rounded-lg cursor-pointer' onClick={() => {window.open("https://docs.google.com/forms/d/e/1FAIpQLSdQT0gu3zkkHc75B6uMoGrbWCmGE3BPhjhiGEzX6BtLVgOiJg/viewform?usp=sf_link")}}>
                                 <p className='text-white'>here</p>
                             </div>
                         </div>

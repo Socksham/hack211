@@ -11,7 +11,7 @@ const CategoryModal = ({ showModal, setShowModal, title, text }) => {
                         <div className="relative w-1/3 my-6 mx-auto max-w-2xl">
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none p-6">
                                 <div className="flex items-start justify-between rounded-t">
-                                    <h3 className="text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500">
+                                    <h3 className="text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700">
                                         {title}
                                     </h3>
                                 </div>
@@ -26,7 +26,7 @@ const CategoryModal = ({ showModal, setShowModal, title, text }) => {
                                         type="button"
                                         onClick={() => setShowModal(false)}
                                     >
-                                        <p className='text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500'>Close</p>
+                                        <p className='text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>Close</p>
                                     </button>
                                 </div>
                             </div>
