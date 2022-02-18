@@ -56,7 +56,7 @@ const Hero = ({ daref }) => {
     return (
         <div className='grid place-items-center h-full min-h-screen bg-gradient-to-tl from-red-700 to-blue-700' ref={daref}>
             <div className=''>
-                <img src='CougarHacks.jpeg' width="500" height="435" alt='CougarHacks'></img>
+                <img src='CougarHacks.png' width="500" height="435" alt='CougarHacks'></img>
                 <br></br>
                 <br></br>
                 {/* <p className='text-center text-white text-6xl font-extrabold pb-4'>CougarHacks</p> */}
