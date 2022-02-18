@@ -33,7 +33,8 @@ const Schedule = ({ daref, refInView }) => {
         },
         {
             times: [
-                { time: "TBD", event: "award ceremony begins", location: " virtually and in-person: conant high school media center" },
+                { time: "7:00pm", event: "award ceremony begins", location: " virtually and in-person: conant high school media center" },
+                { time: "8:00pm", event: "award ceremony concludes: Thanks for attending!", location: " virtually and in-person: conant high school media center" }
             ]
         }
     ])
