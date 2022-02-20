@@ -11,11 +11,11 @@ const Schedule = ({ daref, refInView }) => {
     const [scheduleTimes, setScheduleTimes] = useState([
         {
             times: [
-                { time: "7:00pm", event: "opening ceremony begins", location: "in-person: conant high school media center" },
-                { time: "7:10pm", event: "guest speaker presentation", location: "in-person: conant high school media center" },
-                { time: "7:30pm", event: "live QnA", location: "in-person: conant high school media center" },
-                { time: "7:45pm", event: "hackathon rules", location: "in-person: conant high school media center" },
-                { time: "8:00pm", event: "offical start to CougarHacks", location: " virtually and in-person: hackthon begins " },
+                { time: "7:00pm", event: "opening ceremony begins", location: "virtually and in-person: conant high school media center" },
+                { time: "7:10pm", event: "guest speaker presentation", location: "virtually and in-person: conant high school media center" },
+                { time: "7:30pm", event: "live QnA", location: "virtually and in-person: conant high school media center" },
+                { time: "7:45pm", event: "hackathon rules", location: "virtually and in-person: conant high school media center" },
+                { time: "8:00pm", event: "offical start to CougarHacks", location: " virtually and in-person: the CougarHacks hackthon begins " },
             ]
         },
         {
