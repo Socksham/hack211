@@ -54,10 +54,10 @@ const FAQ = ({ daref }) => {
                     question: "I'm interested! Where do I sign up!?",
                     answer: "Official sign ups are not avilable yet, but you should fill out the interest form linked at the top of the page"
                 },
-                
+
                 {
                     question: "I have more questions!",
-                    answer: "Reach out to us at anandani4136@students.d211.org or makadia7236@students.d211.org and we are happy to help!"
+                    answer: "Reach out to us by clicking the email link at the bottom of the page and we are happy to help!"
                 }
             ]
         },
@@ -66,11 +66,13 @@ const FAQ = ({ daref }) => {
         <div className='grid place-items-center bg-white min-h-screen h-full' ref={daref}>
             <div className='space-y-4'>
                 <p className='text-center text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>faq</p>
-                <div className='grid grid-cols-2 gap-4 mx-32'>
+                <div className='grid grid-cols-2 gap-4 mx-4 lg:mx-32'>
                     {
                         items.map((item, i) => {
                             return (
-                                <FAQCard title={item.title} items={item.questions}/>
+                                <div key={i}>
+                                    <FAQCard title={item.title} items={item.questions} />
+                                </div>
                             )
                         })
                     }

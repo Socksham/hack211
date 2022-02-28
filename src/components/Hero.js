@@ -56,9 +56,7 @@ const Hero = ({ daref }) => {
     return (
         <div className='grid place-items-center h-full min-h-screen bg-gradient-to-tl from-red-700 to-blue-700' ref={daref}>
             <div className=''>
-                <img src='CougarHacks.png' width="500" height="435" alt='CougarHacks'></img>
-                <br></br>
-                <br></br>
+                <img src='CougarHacks.png' width="350" alt='CougarHacks' className='pb-2'></img>
                 {/* <p className='text-center text-white text-6xl font-extrabold pb-4'>CougarHacks</p> */}
                 
                 <div className='text-white text-3xl'>
@@ -75,10 +73,16 @@ const Hero = ({ daref }) => {
                     </div>
                 </div>
                 <div className='flex justify-center mt-4 rounded-xl'>
-                    <div className='bg-white px-2 py-2 rounded-lg'>
-                        <div className='flex space-x-2 text-white text-lg items-center'>
+                    <div className='space-y-3'>
+                        <div className='rounded-lg p-2 bg-white flex space-x-2 text-white text-lg items-center'>
                             <p className='text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>interested? fill out the form</p>
                             <div className='bg-gradient-to-tl from-red-700 to-blue-700 py-1 px-2 rounded-lg cursor-pointer' onClick={() => {window.open("https://docs.google.com/forms/d/e/1FAIpQLSdQT0gu3zkkHc75B6uMoGrbWCmGE3BPhjhiGEzX6BtLVgOiJg/viewform?usp=sf_link")}}>
+                                <p className='text-white'>here</p>
+                            </div>
+                        </div>
+                        <div className='rounded-lg p-2 bg-white flex space-x-2 text-white text-lg items-center content-center justify-center'>
+                            <p className='text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>questions? email us</p>
+                            <div className='bg-gradient-to-tl from-red-700 to-blue-700 py-1 px-2 rounded-lg cursor-pointer' onClick={() => {window.open("mailto:anandani4136@students.d211.org")}}>
                                 <p className='text-white'>here</p>
                             </div>
                         </div>

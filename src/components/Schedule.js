@@ -54,7 +54,7 @@ const Schedule = ({ daref, refInView }) => {
 
     return (
         <div className='bg-white h-full min-h-screen' ref={daref}>
-            <div className='px-32 py-16'>
+            <div className='px-4 lg:px-32 py-16'>
                 <p className='text-center text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>schedule</p>
                 <Transition
                     show={animated.current}

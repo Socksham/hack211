@@ -33,8 +33,9 @@ const Categories = ({ daref, refInView }) => {
 
     return (
         <div className='grid place-items-center bg-gradient-to-tl from-red-700 to-blue-700 min-h-screen h-full' ref={daref}>
-            <CategoryModal showModal={showModal} setShowModal={setShowModal} title={modalTitle} text={modalText} />
+            
             <div className=''>
+            <CategoryModal showModal={showModal} setShowModal={setShowModal} title={modalTitle} text={modalText} />
                 <p className='text-center text-white text-6xl font-extrabold pb-4 mb-10'>categories</p>
                 <div className='grid grid-cols-2 gap-8'>
                     <Transition
