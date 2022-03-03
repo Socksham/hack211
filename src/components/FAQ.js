@@ -5,7 +5,7 @@ import FAQCard from './FAQCard';
 const FAQ = ({ daref }) => {
     const [items, setItems] = useState([
         {
-            title: "general",
+            title: "General",
             questions: [
                 {
                     question: "What is a hackathon?",
@@ -22,7 +22,7 @@ const FAQ = ({ daref }) => {
             ]
         },
         {
-            title: "timing",
+            title: "Timing",
             questions: [
                 {
                     question: "How long is CougarHacks?",
@@ -31,7 +31,7 @@ const FAQ = ({ daref }) => {
             ]
         },
         {
-            title: "logistics",
+            title: "Logistics",
             questions: [
                 {
                     question: "How do categories and prizes work?",
@@ -44,7 +44,7 @@ const FAQ = ({ daref }) => {
             ]
         },
         {
-            title: "questions",
+        title: "Questions",
             questions: [
                 {
                     question: "But I don’t know how to code?",
@@ -65,7 +65,7 @@ const FAQ = ({ daref }) => {
     return (
         <div className='grid place-items-center bg-white min-h-screen h-full' ref={daref}>
             <div className='space-y-4'>
-                <p className='text-center text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>faq</p>
+                <p className='text-center text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>FAQ</p>
                 <div className='grid grid-cols-2 gap-4 mx-4 lg:mx-32'>
                     {
                         items.map((item, i) => {

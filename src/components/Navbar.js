@@ -21,26 +21,26 @@ const Navbar = ({ glass, time, about, categories, schedule, faq }) => {
                             </div>
                             <div className='flex space-x-4 items-center hidden lg:flex'>
                                 <div onClick={() => { about.current.scrollIntoView({ behavior: 'smooth' }) }}>
-                                    <p className='border-dashed border-2 border-white rounded-lg  px-2 text-lg font-semibold cursor-pointer'>about</p>
+                                    <p className='border-dashed border-2 border-white rounded-lg  px-2 text-lg font-semibold cursor-pointer'>About</p>
                                 </div>
                                 <div onClick={() => { categories.target.scrollIntoView({ behavior: 'smooth' }) }}>
-                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>categories</p>
+                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>Categories</p>
                                 </div>
                                 <div onClick={() => { schedule.target.scrollIntoView({ behavior: 'smooth' }) }}>
-                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>schedule</p>
+                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>Schedule</p>
                                 </div>
                                 <div onClick={() => { faq.target.scrollIntoView({ behavior: 'smooth' }) }}>
-                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>faq</p>
+                                    <p className='border-dashed border-2 border-white rounded-lg px-2 text-lg font-semibold cursor-pointer'>FAQ</p>
                                 </div>
                                 <div className='bg-white rounded-lg px-2 py-1' onClick={() => { time.target.scrollIntoView({ behavior: 'smooth' }) }}>
-                                    <p className='text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700  rounded-lg text-lg font-semibold cursor-pointer'>interested?</p>
+                                    <p className='text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700  rounded-lg text-lg font-semibold cursor-pointer'>Interested?</p>
                                 </div>
                             </div>
                             <div className="flex lg:hidden mb-1 cursor-pointer">
                                 <label onClick={() => {
                                     console.log("ERIRE")
                                     setClicked(!clicked)
-                                }} for="menu-toggle" className="pointer-cursor block lg:hidden block"><svg className="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+                                }} for="menu-toggle" className="pointer-cursor block lg:hidden block"><svg className="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
                                 <input className="hidden" type="checkbox" id="menu-toggle" />
                             </div>
                         </div>

@@ -17,7 +17,7 @@ const About = ({ daref, refInView, ref2 }) => {
     return (
         <div className='mt-10 lg:mt-0 lg:grid lg:place-items-center h-full min-h-screen' ref={ref2}>
             <div ref={daref}>
-                <p className='text-center text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 mb-10'>about</p>
+                <p className='text-center text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 mb-10'>About</p>
                 <Transition
                     show={animated.current}
                     enter="transition duration-700 transform"

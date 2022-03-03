@@ -36,7 +36,7 @@ const Categories = ({ daref, refInView }) => {
             
             <div className=''>
             <CategoryModal showModal={showModal} setShowModal={setShowModal} title={modalTitle} text={modalText} />
-                <p className='text-center text-white text-6xl font-extrabold pb-4 mb-10'>categories</p>
+                <p className='text-center text-white text-6xl font-extrabold pb-4 mb-10'>Categories</p>
                 <div className='grid grid-cols-2 gap-8'>
                     <Transition
                         show={animated.current}
@@ -49,7 +49,7 @@ const Categories = ({ daref, refInView }) => {
                     >
                         <div className='bg-white rounded-xl grid place-items-center p-8 cursor-pointer shadow-md' onClick={entertainment}>
                             <div>
-                                <p className='text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>game</p>
+                                <p className='text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>Game</p>
                             </div>
                         </div>
                     </Transition>
@@ -65,7 +65,7 @@ const Categories = ({ daref, refInView }) => {
                     >
                         <div className='bg-white rounded-xl grid place-items-center p-8 cursor-pointer shadow-md' onClick={utilities}>
                             <div>
-                                <p className='text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>utility</p>
+                                <p className='text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>Utility</p>
                             </div>
                         </div>
                     </Transition>

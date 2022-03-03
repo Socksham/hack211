@@ -6,35 +6,35 @@ import { Transition } from '@headlessui/react'
 const Schedule = ({ daref, refInView }) => {
 
     const animated = useRef(false)
-    const [scheduleDays, setScheduleDays] = useState(["march 11", "march 12", "march 13", "march 14"])
+    const [scheduleDays, setScheduleDays] = useState(["March 11", "March 12", "March 13", "March 14"])
     const [num, setNum] = useState(0)
     const [scheduleTimes, setScheduleTimes] = useState([
         {
             times: [
-                { time: "7:00pm", event: "opening ceremony begins", location: "virtually and in-person: conant high school media center" },
-                { time: "7:10pm", event: "guest speaker presentation", location: "virtually and in-person: conant high school media center" },
-                { time: "7:30pm", event: "live QnA", location: "virtually and in-person: conant high school media center" },
-                { time: "7:45pm", event: "hackathon rules", location: "virtually and in-person: conant high school media center" },
-                { time: "8:00pm", event: "offical start to CougarHacks", location: " virtually and in-person: the CougarHacks hackthon begins " },
+                { time: "7:00pm", event: "Opening Ceremony begins", location: "virtually and in-person: conant high school media center" },
+                { time: "7:10pm", event: "Guest Speaker presentation", location: "virtually and in-person: conant high school media center" },
+                { time: "7:30pm", event: "Live QnA", location: "virtually and in-person: conant high school media center" },
+                { time: "7:45pm", event: "CougarHacks Rules", location: "virtually and in-person: conant high school media center" },
+                { time: "8:00pm", event: "Offical start to CougarHacks", location: " virtually and in-person: the CougarHacks hackthon begins " },
             ]
         },
         {
             times: [
-                { time: "8:00am", event: "workshops begin", location: "virtually: zoom" },
-                { time: "8:00pm", event: "workshops end", location: "virtually: zoom" },
+                { time: "8:00am", event: "Workshops begin", location: "virtually: zoom" },
+                { time: "8:00pm", event: "Workshops end", location: "virtually: zoom" },
 
             ]
         },
         {
             times: [
-                { time: "8:00am", event: "project submissions due", location: "virtually: devpost" },
-                { time: "8:00am", event: "project judging begins", location: "virtually: devpost" },
+                { time: "8:00am", event: "Project submissions due", location: "virtually: devpost" },
+                { time: "8:00am", event: "Project judging begins", location: "virtually: devpost" },
             ]
         },
         {
             times: [
-                { time: "7:00pm", event: "award ceremony begins", location: " virtually and in-person: conant high school media center" },
-                { time: "8:00pm", event: "award ceremony concludes: Thanks for attending!", location: " virtually and in-person: conant high school media center" }
+                { time: "7:00pm", event: "Award ceremony begins", location: " virtually and in-person: conant high school media center" },
+                { time: "8:00pm", event: "Award ceremony concludes: Thanks for attending!", location: " virtually and in-person: conant high school media center" }
             ]
         }
     ])
@@ -55,7 +55,7 @@ const Schedule = ({ daref, refInView }) => {
     return (
         <div className='bg-white h-full min-h-screen' ref={daref}>
             <div className='px-4 lg:px-32 py-16'>
-                <p className='text-center text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>schedule</p>
+                <p className='text-center text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>Schedule</p>
                 <Transition
                     show={animated.current}
                     enter="transition ease-in-out duration-700 transform"
