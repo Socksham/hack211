@@ -52,7 +52,7 @@ const FAQ = ({ daref }) => {
                 },
                 {
                     question: "I'm interested! Where do I sign up!?",
-                    answer: "Official sign ups are not avilable yet, but you should fill out the interest form linked at the top of the page"
+                    answer: "You should fill out the interest form linked at the top of the page and join the DevPost and Discord server!"
                 },
 
                 {
