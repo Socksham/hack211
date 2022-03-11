@@ -11,37 +11,37 @@ const Schedule = ({ daref, refInView }) => {
     const [scheduleTimes, setScheduleTimes] = useState([
         {
             times: [
-                { time: "7:00pm", event: "Opening Ceremony begins", location: "virtually and in-person: conant high school media center" },
-                { time: "7:10pm", event: "Guest Speaker presentation", location: "virtually and in-person: conant high school media center" },
-                { time: "7:30pm", event: "Live QnA", location: "virtually and in-person: conant high school media center" },
-                { time: "7:45pm", event: "CougarHacks Rules", location: "virtually and in-person: conant high school media center" },
-                { time: "8:00pm", event: "Offical start to CougarHacks", location: " virtually and in-person: the CougarHacks hackathon begins " },
+                { time: "7:00pm CST", event: "Opening Ceremony begins", location: "virtually and in-person: conant high school media center" },
+                { time: "7:10pm CST", event: "Guest Speaker presentation", location: "virtually and in-person: conant high school media center" },
+                { time: "7:30pm CST", event: "Live QnA", location: "virtually and in-person: conant high school media center" },
+                { time: "7:45pm CST", event: "CougarHacks Rules", location: "virtually and in-person: conant high school media center" },
+                { time: "8:00pm CST", event: "Offical start to CougarHacks", location: " virtually and in-person: the CougarHacks hackathon begins " },
             ]
         },
         {
             times: [
-                { time: "1:00pm", event: "Overview of Git", location: "virtually: zoom" },
-                { time: "2:00pm", event: "UIUC Student Panel", location: "virtually: zoom" },
-                { time: "3:00pm", event: "Core principles of WebScraping", location: "virtually: zoom" },
-                { time: "3:00pm", event: "Fundamentals of Databases", location: "virtually: zoom" },
-                { time: "4:00pm", event: "Essentials of API Data Fetching", location: "virtually: zoom" },
-                { time: "4:00pm", event: "Advanced Web Development", location: "virtually: zoom" },
-                { time: "5:00pm", event: "Unity Game Development", location: "virtually: zoom" },
-                { time: "7:00pm", event: "Advanced Databases", location: "virtually: zoom" },
-                { time: "8:00pm", event: "Introduction to Artificial Intelligence", location: "virtually: zoom" },
+                { time: "1:00pm CST", event: "Overview of Git", location: "virtually: zoom" },
+                { time: "2:00pm CST", event: "UIUC Student Panel", location: "virtually: zoom" },
+                { time: "3:00pm CST", event: "Core principles of WebScraping", location: "virtually: zoom" },
+                { time: "3:00pm CST", event: "Fundamentals of Databases", location: "virtually: zoom" },
+                { time: "4:00pm CST", event: "Essentials of API Data Fetching", location: "virtually: zoom" },
+                { time: "4:00pm CST", event: "Advanced Web Development", location: "virtually: zoom" },
+                { time: "5:00pm CST", event: "Unity Game Development", location: "virtually: zoom" },
+                { time: "7:00pm CST", event: "Advanced Databases", location: "virtually: zoom" },
+                { time: "8:00pm CST", event: "Introduction to Artificial Intelligence", location: "virtually: zoom" },
 
             ]
         },
         {
             times: [
-                { time: "8:00am", event: "Project submissions due", location: "virtually: devpost" },
-                { time: "8:00am", event: "Project judging begins", location: "virtually: devpost" },
+                { time: "9:00am CST", event: "Project submissions due", location: "virtually: devpost" },
+                { time: "8:00am CST", event: "Project judging begins", location: "virtually: devpost" },
             ]
         },
         {
             times: [
-                { time: "7:00pm", event: "Award ceremony begins", location: " virtually and in-person: conant high school media center" },
-                { time: "8:00pm", event: "Award ceremony concludes: Thanks for attending!", location: " virtually and in-person: conant high school media center" }
+                { time: "7:00pm CST", event: "Award Ceremony Begins", location: " virtually and in-person: conant high school media center" },
+                { time: "8:00pm CST", event: "Award Ceremony Concludes: Thanks for attending!", location: " virtually and in-person: conant high school media center" }
             ]
         }
     ])
