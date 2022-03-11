@@ -15,13 +15,20 @@ const Schedule = ({ daref, refInView }) => {
                 { time: "7:10pm", event: "Guest Speaker presentation", location: "virtually and in-person: conant high school media center" },
                 { time: "7:30pm", event: "Live QnA", location: "virtually and in-person: conant high school media center" },
                 { time: "7:45pm", event: "CougarHacks Rules", location: "virtually and in-person: conant high school media center" },
-                { time: "8:00pm", event: "Offical start to CougarHacks", location: " virtually and in-person: the CougarHacks hackthon begins " },
+                { time: "8:00pm", event: "Offical start to CougarHacks", location: " virtually and in-person: the CougarHacks hackathon begins " },
             ]
         },
         {
             times: [
-                { time: "8:00am", event: "Workshops begin", location: "virtually: zoom" },
-                { time: "8:00pm", event: "Workshops end", location: "virtually: zoom" },
+                { time: "1:00pm", event: "Overview of Git", location: "virtually: zoom" },
+                { time: "2:00pm", event: "UIUC Student Panel", location: "virtually: zoom" },
+                { time: "3:00pm", event: "Core principles of WebScraping", location: "virtually: zoom" },
+                { time: "3:00pm", event: "Fundamentals of Databases", location: "virtually: zoom" },
+                { time: "4:00pm", event: "Essentials of API Data Fetching", location: "virtually: zoom" },
+                { time: "4:00pm", event: "Advanced Web Development", location: "virtually: zoom" },
+                { time: "5:00pm", event: "Unity Game Development", location: "virtually: zoom" },
+                { time: "7:00pm", event: "Advanced Databases", location: "virtually: zoom" },
+                { time: "8:00pm", event: "Introduction to Artificial Intelligence", location: "virtually: zoom" },
 
             ]
         },

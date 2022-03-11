@@ -9,7 +9,9 @@ const Hero = ({ daref }) => {
 
     const updateTime = () => {
         let date_now = new Date().getTime()
-        let date_future = 1647007200000
+        let date_future = 1647046800000
+        //7PM Friday — 1647046800000
+        //Submission Deadline — 1647180000000
 
         // get total seconds between the times
         var delta = Math.abs(date_future - date_now) / 1000;
