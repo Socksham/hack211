@@ -6,18 +6,10 @@ import { Transition } from '@headlessui/react'
 const Schedule = ({ daref, refInView }) => {
 
     const animated = useRef(false)
-    const [scheduleDays, setScheduleDays] = useState(["March 11", "March 12", "March 13", "March 14"])
+    const [scheduleDays, setScheduleDays] = useState(["March 12", "March 13", "March 14", "March 11"])
     const [num, setNum] = useState(0)
     const [scheduleTimes, setScheduleTimes] = useState([
-        {
-            times: [
-                { time: "7:00pm CST", event: "Opening Ceremony begins", location: "virtually and in-person: conant high school media center" },
-                { time: "7:10pm CST", event: "Guest Speaker presentation", location: "virtually and in-person: conant high school media center" },
-                { time: "7:30pm CST", event: "Live QnA", location: "virtually and in-person: conant high school media center" },
-                { time: "7:45pm CST", event: "CougarHacks Rules", location: "virtually and in-person: conant high school media center" },
-                { time: "8:00pm CST", event: "Offical start to CougarHacks", location: " virtually and in-person: the CougarHacks hackathon begins " },
-            ]
-        },
+        
         {
             times: [
                 { time: "1:00pm CST", event: "Overview of Git", location: "virtually: zoom" },
@@ -42,6 +34,15 @@ const Schedule = ({ daref, refInView }) => {
             times: [
                 { time: "7:00pm CST", event: "Award Ceremony Begins", location: " virtually and in-person: conant high school media center" },
                 { time: "8:00pm CST", event: "Award Ceremony Concludes: Thanks for attending!", location: " virtually and in-person: conant high school media center" }
+            ]
+        },
+        {
+            times: [
+                { time: "7:00pm CST", event: "Opening Ceremony begins", location: "virtually and in-person: conant high school media center" },
+                { time: "7:10pm CST", event: "Guest Speaker presentation", location: "virtually and in-person: conant high school media center" },
+                { time: "7:30pm CST", event: "Live QnA", location: "virtually and in-person: conant high school media center" },
+                { time: "7:45pm CST", event: "CougarHacks Rules", location: "virtually and in-person: conant high school media center" },
+                { time: "8:00pm CST", event: "Offical start to CougarHacks", location: " virtually and in-person: the CougarHacks hackathon begins " },
             ]
         }
     ])
