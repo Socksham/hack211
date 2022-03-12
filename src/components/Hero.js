@@ -9,7 +9,7 @@ const Hero = ({ daref }) => {
 
     const updateTime = () => {
         let date_now = new Date().getTime()
-        let date_future = 1647046800000
+        let date_future = 1647180000000
         //7PM Friday — 1647046800000
         //Submission Deadline — 1647180000000
 
@@ -59,8 +59,15 @@ const Hero = ({ daref }) => {
         <div className='grid place-items-center h-full min-h-screen bg-gradient-to-tl from-red-700 to-blue-700' ref={daref}>
             <div className=''>
                 <img src='CougarHacks.png' width="350" alt='CougarHacks' className='pb-2'></img>
-                {/* <p className='text-center text-white text-6xl font-extrabold pb-4'>CougarHacks</p> */}
-                
+                <br></br>
+                {/* <p className='text-center text-white text-6xl font-extrabold pb-4'>Submissions Due In</p> */}
+                <div className='text-white text-3xl'>
+                    <div className='flex justify-center'>
+                        <div className='flex space-x-6 tabular-nums'>
+                            <p>Submissions Due In</p>
+                        </div>
+                    </div>
+                </div>
                 <div className='text-white text-3xl'>
                     <div className='flex justify-center'>
                         <div className='flex space-x-6 tabular-nums'>
