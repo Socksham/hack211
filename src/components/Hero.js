@@ -83,12 +83,12 @@ const Hero = ({ daref }) => {
                 </div>
                 <div className='flex justify-center mt-4 rounded-xl'>
                     <div className='space-y-3'>
-                        <div className='rounded-lg p-2 bg-white flex space-x-2 text-white text-lg items-center'>
+                        {/* <div className='rounded-lg p-2 bg-white flex space-x-2 text-white text-lg items-center'>
                             <p className='text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700'>Interested? Fill out the form</p>
                             <div className='bg-gradient-to-tl from-red-700 to-blue-700 py-1 px-2 rounded-lg cursor-pointer' onClick={() => {window.open("https://docs.google.com/forms/d/e/1FAIpQLSdQT0gu3zkkHc75B6uMoGrbWCmGE3BPhjhiGEzX6BtLVgOiJg/viewform?usp=sf_link")}}>
                                 <p className='text-white'>here</p>
                             </div>
-                        </div>
+                        </div> */}
                         <div className='rounded-lg p-2 bg-white flex space-x-2 text-white text-lg items-center'>
                             <p className='text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 mx-auto'>Check out our devpost!</p>
                             <div className='bg-gradient-to-tl from-red-700 to-blue-700 py-1 px-2 rounded-lg cursor-pointer' onClick={() => {window.open("https://cougarhacks.devpost.com")}}>
