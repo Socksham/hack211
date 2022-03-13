@@ -6,7 +6,7 @@ import { Transition } from '@headlessui/react'
 const Schedule = ({ daref, refInView }) => {
 
     const animated = useRef(false)
-    const [scheduleDays, setScheduleDays] = useState(["March 12", "March 13", "March 14", "March 11"])
+    const [scheduleDays, setScheduleDays] = useState(["March 13", "March 14", "March 11", "March 12"])
     const [num, setNum] = useState(0)
     const [scheduleTimes, setScheduleTimes] = useState([
         
