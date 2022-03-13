@@ -10,24 +10,11 @@ const Schedule = ({ daref, refInView }) => {
     const [num, setNum] = useState(0)
     const [scheduleTimes, setScheduleTimes] = useState([
         
+        
         {
             times: [
-                { time: "1:00pm CST", event: "Overview of Git", location: "virtually: zoom" },
-                { time: "2:00pm CST", event: "UIUC Student Panel", location: "virtually: zoom" },
-                { time: "3:00pm CST", event: "Core principles of WebScraping", location: "virtually: zoom" },
-                { time: "3:00pm CST", event: "Fundamentals of Databases", location: "virtually: zoom" },
-                { time: "4:00pm CST", event: "Essentials of API Data Fetching", location: "virtually: zoom" },
-                { time: "4:00pm CST", event: "Advanced Web Development", location: "virtually: zoom" },
-                { time: "5:00pm CST", event: "Unity Game Development", location: "virtually: zoom" },
-                { time: "7:00pm CST", event: "Advanced Databases", location: "virtually: zoom" },
-                { time: "8:00pm CST", event: "Introduction to Artificial Intelligence", location: "virtually: zoom" },
-
-            ]
-        },
-        {
-            times: [
-                { time: "9:00am CST", event: "Project submissions due", location: "virtually: devpost" },
-                { time: "8:00am CST", event: "Project judging begins", location: "virtually: devpost" },
+                { time: "9:00am CST", event: "Project Submissions Deadline!!", location: "virtually: devpost" },
+                { time: "12:00pm CST", event: "Project Judging Begins", location: "virtually: devpost" },
             ]
         },
         {
@@ -43,6 +30,20 @@ const Schedule = ({ daref, refInView }) => {
                 { time: "7:30pm CST", event: "Live QnA", location: "virtually and in-person: conant high school media center" },
                 { time: "7:45pm CST", event: "CougarHacks Rules", location: "virtually and in-person: conant high school media center" },
                 { time: "8:00pm CST", event: "Offical start to CougarHacks", location: " virtually and in-person: the CougarHacks hackathon begins " },
+            ]
+        },
+        {
+            times: [
+                { time: "1:00pm CST", event: "Overview of Git", location: "virtually: zoom" },
+                { time: "2:00pm CST", event: "UIUC Student Panel", location: "virtually: zoom" },
+                { time: "3:00pm CST", event: "Core principles of WebScraping", location: "virtually: zoom" },
+                { time: "3:00pm CST", event: "Fundamentals of Databases", location: "virtually: zoom" },
+                { time: "4:00pm CST", event: "Essentials of API Data Fetching", location: "virtually: zoom" },
+                { time: "4:00pm CST", event: "Advanced Web Development", location: "virtually: zoom" },
+                { time: "5:00pm CST", event: "Unity Game Development", location: "virtually: zoom" },
+                { time: "7:00pm CST", event: "Advanced Databases", location: "virtually: zoom" },
+                { time: "8:00pm CST", event: "Introduction to Artificial Intelligence", location: "virtually: zoom" },
+
             ]
         }
     ])
