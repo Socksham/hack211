@@ -17,7 +17,7 @@ const FAQ = ({ daref }) => {
                 },
                 {
                     question: "What’s the cost?",
-                    answer: "Completely free! We want to make Hack211 accessible and open to all."
+                    answer: "Completely free! We want to make CougarHacks accessible and open to all."
                 }
             ]
         },
