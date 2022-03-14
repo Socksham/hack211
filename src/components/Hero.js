@@ -89,6 +89,20 @@ const Hero = ({ daref }) => {
                         </div>
                     </div>
                 </div>
+                <div className='text-white text-3xl'>
+                    <div className='flex justify-center'>
+                        <div className='flex space-x-6 tabular-nums'>
+                            <p>in our awards Zoom</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='text-white text-3xl'>
+                    <div className='flex justify-center'>
+                        <div className='flex space-x-6 tabular-nums'>
+                            <p>(Link provided in Discord)</p>
+                        </div>
+                    </div>
+                </div>
                 {/* <div className='text-white text-3xl'>
                     <div className='flex justify-center'>
                         <div className='flex space-x-6 tabular-nums'>
