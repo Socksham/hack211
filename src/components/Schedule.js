@@ -6,23 +6,11 @@ import { Transition } from '@headlessui/react'
 const Schedule = ({ daref, refInView }) => {
 
     const animated = useRef(false)
-    const [scheduleDays, setScheduleDays] = useState(["March 13", "March 14", "March 11", "March 12"])
+    const [scheduleDays, setScheduleDays] = useState(["March 11", "March 12", "March 13", "March 14"])
     const [num, setNum] = useState(0)
     const [scheduleTimes, setScheduleTimes] = useState([
         
         
-        {
-            times: [
-                { time: "9:00am CST", event: "Project Submissions Deadline!!", location: "virtually: devpost" },
-                { time: "12:00pm CST", event: "Project Judging Begins", location: "virtually: devpost" },
-            ]
-        },
-        {
-            times: [
-                { time: "7:00pm CST", event: "Award Ceremony Begins", location: " virtually and in-person: conant high school media center" },
-                { time: "8:00pm CST", event: "Award Ceremony Concludes: Thanks for attending!", location: " virtually and in-person: conant high school media center" }
-            ]
-        },
         {
             times: [
                 { time: "7:00pm CST", event: "Opening Ceremony begins", location: "virtually and in-person: conant high school media center" },
@@ -44,6 +32,18 @@ const Schedule = ({ daref, refInView }) => {
                 { time: "7:00pm CST", event: "Advanced Databases", location: "virtually: zoom" },
                 { time: "8:00pm CST", event: "Introduction to Artificial Intelligence", location: "virtually: zoom" },
 
+            ]
+        },
+        {
+            times: [
+                { time: "9:00am CST", event: "Project Submissions Deadline!!", location: "virtually: devpost" },
+                { time: "12:00pm CST", event: "Project Judging Begins", location: "virtually: devpost" },
+            ]
+        },
+        {
+            times: [
+                { time: "7:00pm CST", event: "Award Ceremony Begins", location: " virtually and in-person: conant high school media center" },
+                { time: "8:00pm CST", event: "Award Ceremony Concludes: Thanks for attending!", location: " virtually and in-person: conant high school media center" }
             ]
         }
     ])
