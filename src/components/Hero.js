@@ -101,6 +101,12 @@ const Hero = ({ daref }) => {
                                 <p className='text-white'>WePlan</p>
                             </div>
                         </div>
+                        <div className='rounded-lg p-2 bg-white flex space-x-2 text-green text-lg items-center content-center justify-center'>
+                            <p className='font-bold text-green-600 mx-auto'>View the DevPost</p>
+                            <div className='bg-gradient-to-tl from-green-700 to-green-700 py-1 px-2 rounded-lg cursor-pointer' onClick={() => {window.open("https://cougarhacks.devpost.com")}}>
+                                <p className='text-white'>here</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -112,6 +118,7 @@ const Hero = ({ daref }) => {
                         </div>
                     </div>
                 </div>
+                
                 {/* <div className='text-white text-3xl'>
                     <div className='flex justify-center'>
                         <div className='flex space-x-6 tabular-nums'>
